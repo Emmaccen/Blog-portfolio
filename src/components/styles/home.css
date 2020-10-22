@@ -1,0 +1,81 @@
+
+/* home top section specific styles */
+
+.navWrapper {
+    position: absolute;
+    top : 0px; right : 0px; left : 0px;
+    width: 100%;
+}
+.navWrapper .navContainer {
+    padding : 3%;
+}
+.navWrapper .navContainer {
+    display: flex;
+}
+.navWrapper .navContainer ul {
+    display: flex;
+    padding : 10px;
+}
+.navWrapper .navContainer ul li {
+    margin: 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo {
+    background-color: var(--primaryColor);
+    padding : 9px 13px;
+    border-radius: 50%;
+    margin : 0px 20px;
+    cursor: pointer;
+}
+
+.homePageWrapper {
+    position: relative;
+    background-image: url('/images/homeBg.jpg');
+    height: 700px;
+    width: 100%;
+}
+
+.homePageWrapper::before {
+    position: absolute;
+    content : '';
+    left: 0;top: 0;
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+/* jumbotron section */
+
+.homePageWrapper .jumbotron {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top : 35%;
+    width : 100%;
+}
+
+/* center all texts */
+.homePageWrapper .jumbotron * {
+    text-align: center;
+}
+.homePageWrapper .jumbotron h2 {
+    font-size: 20px;
+    color : var(--primaryColor);
+}
+
+.homePageWrapper .jumbotron h1 {
+    font-size: 5vw;
+    margin : 5px 0px;
+}
+
+.homePageWrapper .jumbotron p {
+    font-size: 25px;
+}
+.jumbotronBtns {
+    margin-top: 25px;
+}
+.jumbotronBtns button:last-child {
+    background-color: var(--primaryColor);
+}

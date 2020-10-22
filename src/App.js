@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Landing from './components/Landing';
+import './components/styles/global.css'
 function App() {
   return (
     <div className="App">
-      
+      <Landing />
     </div>
   );
 }
