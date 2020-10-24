@@ -2,11 +2,9 @@ import React from 'react'
 import Nav from './Nav'
 import './styles/home.css'
 
-class Landing extends React.Component {
-
-    render () {
+const Landing = () => {
         return(
-            <div className='homePageWrapper backgroundFix'>
+            <div className='homePageWrapper backgroundFix darken'>
                 <Nav />
                 <div className='jumbotron'>
                     <div>
@@ -15,13 +13,12 @@ class Landing extends React.Component {
                         <p>Freelance Web Developer Based In NY City</p>
                         <div className='jumbotronBtns'>
                             <button>Portfolio</button>
-                            <button>Contact</button>
+                            <button>Resume</button>
                         </div>
                     </div>
                 </div>
             </div>
         )
-    }
 }
 
 export default Landing

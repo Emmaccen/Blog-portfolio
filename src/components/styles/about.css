@@ -1,0 +1,22 @@
+.aboutSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 20px;
+    margin : 60px auto;
+}
+.aboutSection span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.aboutSection .aboutMeImg {
+    position: relative;
+    background-image: url('/images/homeBg.jpg');
+    height: 400px;
+    width: 100%;
+}
+.aboutBtns button:first-child {
+    margin-left: 0px;
+}
+.aboutBtns button:last-child {
+    background-color : var(--primaryColor);
+}
