@@ -7,11 +7,11 @@ export const About = () => {
         <div className='aboutSection container'>
             <div className='centered'>
                 <div>
-                    <div>
-                        <span>
+                    <header>
+                        <h1>
                             About <span className='accent'>Me</span> <span className='primary'>.</span>
-                        </span>
-                    </div>
+                        </h1>
+                    </header>
                     <div>
                         <p className=''>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio 
