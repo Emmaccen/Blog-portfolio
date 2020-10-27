@@ -1,0 +1,23 @@
+.myServicesWrapper .myServicesHeader {
+  margin-bottom: 50px;
+}
+.myServicesWrapper .servicesWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.myServicesWrapper .serviceIconBg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+}
+.myServicesWrapper .serviceCard * {
+  text-align: center;
+}
+.myServicesWrapper .serviceCard {
+  background-color: var(--cardBackground);
+  padding: 20px 10px;
+  border-radius: 2px;
+}
