@@ -4,7 +4,7 @@ import "./styles/myServices.css";
 export const MyService = () => {
   return (
     <div className="myServicesWrapper container2">
-      <header className="centered myServicesHeader">
+      <header className="centered sectionHeader">
         <h1>
           My <span className="accent">Services</span>
           <span className="primary">.</span>

@@ -9,9 +9,7 @@ export const Portfolio = () => {
         <div
           className="backgroundFix background"
           style={{ backgroundImage: `url(${image})` }}
-        >
-          {" "}
-        </div>
+        ></div>
         <div className="overlay centered">
           <div>
             <h3>{name}</h3>
@@ -25,7 +23,7 @@ export const Portfolio = () => {
 
   return (
     <div className="portfolioWrapper">
-      <header className="portfolioHeader centered">
+      <header className="centered sectionHeader">
         <div>
           <h1>
             My <span className="accent">Portfolio</span>

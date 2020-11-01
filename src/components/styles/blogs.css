@@ -1,0 +1,42 @@
+.blogsWrapper {
+  margin: 100px auto;
+}
+.blogsWrapper .blogPosts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  height: 500px;
+}
+.blogsWrapper .blog .background {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease;
+  /* its inline so... */
+  display: block;
+}
+.blogsWrapper .blog {
+  overflow: hidden;
+  position: relative;
+}
+
+.blogsWrapper .blog .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+.blogsWrapper .blogRight {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.blogsWrapper .blogPosts .blog:hover > .background {
+  filter: brightness(30%);
+  transform: scale(1.1);
+}

@@ -138,3 +138,7 @@ button:hover {
 .accent {
   color: var(--accentColor);
 }
+.sectionHeader {
+  margin-bottom: 50px;
+  text-align: center;
+}

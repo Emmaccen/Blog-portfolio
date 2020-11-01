@@ -1,6 +1,3 @@
-.myServicesWrapper .myServicesHeader {
-  margin-bottom: 50px;
-}
 .myServicesWrapper .servicesWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
