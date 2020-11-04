@@ -29,7 +29,9 @@ export const Portfolio = () => {
             My <span className="accent">Portfolio</span>
             <span className="primary">.</span>
           </h1>
-          <p>Explore Some Of My Awesome Projects</p>
+          <h3>
+            Explore Some Of My <span className="accent">Awesome</span> Projects
+          </h3>
         </div>
       </header>
 

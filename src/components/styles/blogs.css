@@ -28,6 +28,7 @@
   text-align: center;
   padding: 10px;
   z-index: 2;
+  display: none;
 }
 
 .blogsWrapper .blogRight {
@@ -39,4 +40,7 @@
 .blogsWrapper .blogPosts .blog:hover > .background {
   filter: brightness(30%);
   transform: scale(1.1);
+}
+.blogsWrapper .blogPosts .blog:hover > .overlay {
+  display: flex;
 }

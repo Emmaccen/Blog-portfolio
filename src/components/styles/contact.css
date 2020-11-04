@@ -1,0 +1,34 @@
+.contactWrapper .sectionHeader {
+  text-align: left;
+}
+
+.contactWrapper .contactIconBg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+  margin-right: 10px;
+}
+.contactWrapper .contactCard {
+  background-color: var(--cardBackground);
+  border-radius: 5px;
+  padding: 10px;
+  /* again cuz one of the contact tag is <a> and its inline */
+  display: block;
+}
+.contactWrapper .contactCard > div {
+  width: 100%;
+  height: 100%;
+  /* align to left */
+  justify-content: flex-start;
+}
+
+.contactWrapper .quickContact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.contactWrapper .quickContact p {
+  word-break: break-all;
+}
