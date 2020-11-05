@@ -6,7 +6,7 @@
 }
 .aboutSection .aboutMeImg {
   position: relative;
-  background-image: url("/images/homeBg.jpg");
+  background-image: url("/images/aboutBg.jpg");
   height: 400px;
   width: 100%;
 }

@@ -32,3 +32,33 @@
 .contactWrapper .quickContact p {
   word-break: break-all;
 }
+
+/* ================================================================= */
+
+.contactFormWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 100px auto;
+}
+
+.contactFormWrapper .inputContainer {
+  margin-top: 20px;
+}
+.contactFormWrapper .inputContainer input,
+.contactFormWrapper .inputContainer textarea {
+  width: 100%;
+}
+.contactFormWrapper .inputContainer textarea {
+  min-height: 200px;
+  max-height: 250px;
+  resize: vertical;
+}
+.contactFormWrapper .contactBg {
+  background-image: url("/images/aboutBg.jpg");
+}
+.contactFormWrapper .contactActionBtn {
+  width: 100%;
+  margin: 0px;
+  margin-top: 10px;
+}

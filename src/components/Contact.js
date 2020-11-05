@@ -47,6 +47,29 @@ const QuickContact = () => {
   );
 };
 
+const ContactFrom = () => {
+  return (
+    <div className="container contactFormWrapper">
+      <div>
+        <div className="inputContainer">
+          <input placeholder="Full Name..." type="text"></input>
+        </div>
+        <div className="inputContainer">
+          <input placeholder="Email..." type="email"></input>
+        </div>
+        <div className="inputContainer">
+          <input placeholder="Subject..." type="text"></input>
+        </div>
+        <div className="inputContainer">
+          <textarea placeholder="Subject..." type="text"></textarea>
+        </div>
+        <button className="contactActionBtn">Send Message</button>
+      </div>
+      <div className="backgroundFix contactBg"></div>
+    </div>
+  );
+};
+
 export const Contact = () => {
   return (
     <div className="contactWrapper container">
@@ -58,6 +81,7 @@ export const Contact = () => {
       </header>
       <div>
         <QuickContact />
+        <ContactFrom />
       </div>
     </div>
   );
