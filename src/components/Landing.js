@@ -4,7 +4,7 @@ import "./styles/home.css";
 
 const Landing = () => {
   return (
-    <div className="homePageWrapper backgroundFix darken">
+    <div id="home" className="homePageWrapper backgroundFix darken">
       <Nav />
       <div className="jumbotron">
         <div>

@@ -3,7 +3,7 @@ import "./styles/blogs.css";
 
 export const Blogs = () => {
   return (
-    <div className="blogsWrapper container">
+    <div id="blogs" className="blogsWrapper container">
       <header className="centered sectionHeader">
         <h1>
           My <span className="accent">Blogs</span>

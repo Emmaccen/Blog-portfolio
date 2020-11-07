@@ -49,7 +49,7 @@ const QuickContact = () => {
 
 const ContactFrom = () => {
   return (
-    <div className="container contactFormWrapper">
+    <div id="contact" className="container contactFormWrapper">
       <div>
         <div className="inputContainer">
           <input placeholder="Full Name..." type="text"></input>

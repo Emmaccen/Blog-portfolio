@@ -3,7 +3,7 @@ import "./styles/about.css";
 
 export const About = () => {
   return (
-    <div className="aboutSection container">
+    <div id="about" className="aboutSection container">
       <div className="centered">
         <div>
           <header>

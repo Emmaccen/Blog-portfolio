@@ -3,7 +3,7 @@ import "./styles/myServices.css";
 
 export const MyService = () => {
   return (
-    <div className="myServicesWrapper container2">
+    <div id="services" className="myServicesWrapper container2">
       <header className="centered sectionHeader">
         <h1>
           My <span className="accent">Services</span>

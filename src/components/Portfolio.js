@@ -22,7 +22,7 @@ export const Portfolio = () => {
   });
 
   return (
-    <div className="portfolioWrapper">
+    <div id="portfolio" className="portfolioWrapper">
       <header className="centered sectionHeader">
         <div>
           <h1>

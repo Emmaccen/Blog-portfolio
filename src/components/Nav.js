@@ -1,4 +1,5 @@
 import React from "react";
+import { scrollToView } from "../sharedFunctions/scrollToView";
 
 class Nav extends React.Component {
   render() {
@@ -7,9 +8,9 @@ class Nav extends React.Component {
         <div className="navContainer">
           <div>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Portfolio</li>
+              <li onClick={() => scrollToView("home")}>Home</li>
+              <li onClick={() => scrollToView("about")}>About</li>
+              <li onClick={() => scrollToView("portfolio")}>Portfolio</li>
             </ul>
           </div>
           <div>
@@ -17,9 +18,9 @@ class Nav extends React.Component {
           </div>
           <div>
             <ul>
-              <li>Services</li>
-              <li>Blogs</li>
-              <li>Contact</li>
+              <li onClick={() => scrollToView("services")}>Services</li>
+              <li onClick={() => scrollToView("blogs")}>Blogs</li>
+              <li onClick={() => scrollToView("contact")}>Contact</li>
             </ul>
           </div>
         </div>
