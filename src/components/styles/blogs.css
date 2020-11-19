@@ -30,6 +30,10 @@
   z-index: 2;
   display: none;
 }
+.blogsWrapper .blog .overlay p {
+  width: 80%;
+  margin: auto;
+}
 
 .blogsWrapper .blogRight {
   display: grid;

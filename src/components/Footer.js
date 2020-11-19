@@ -10,9 +10,9 @@ export const Footer = () => {
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
         <div className="centered footerIcons">
-          <i>Icon 1</i>
-          <i>Icon 2</i>
-          <i>Icon 3</i>
+          <i className="fa fa-2x fa-twitter"></i>
+          <i className="fa fa-2x fa-github"></i>
+          <i className="fa fa-2x fa-linkedin"></i>
         </div>
         <div className="centered footerLinks">
           <p onClick={() => scrollToView("home")}>Home</p>

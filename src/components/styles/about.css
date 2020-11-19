@@ -6,9 +6,12 @@
 }
 .aboutSection .aboutMeImg {
   position: relative;
-  background-image: url("/images/aboutBg.jpg");
+  background-image: url("/images/6.jpg");
   height: 400px;
   width: 100%;
+}
+.aboutSection p {
+  font-size: 18px;
 }
 .aboutBtns button:first-child {
   margin-left: 0px;

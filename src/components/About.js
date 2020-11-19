@@ -13,7 +13,7 @@ export const About = () => {
             </h1>
           </header>
           <div>
-            <p className="">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
               molestiae suscipit iusto voluptas exercitationem eius esse illum
               corporis, officiis dolorum veritatis, ullam laboriosam
