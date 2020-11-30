@@ -82,3 +82,50 @@
 .jumbotronBtns button:last-child {
   background-color: var(--primaryColor);
 }
+
+/* responsiveness */
+.menuController {
+  /* background-color: var(--accentColor); */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menuController .container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+  padding: 20px;
+}
+.menuDrawer {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  z-index: 6;
+  width: 30%;
+  background-color: rgba(33, 150, 83, 0.3);
+}
+.menuDrawer #closeMenu {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  cursor: pointer;
+  transition: var(--ease);
+  font-weight: 500;
+}
+.menuDrawer #closeMenu:hover {
+  color: red;
+}
+.menuDrawer ul {
+  display: inline-block;
+}
+.menuDrawer ul li {
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 20px 5px;
+  z-index: 10;
+  transition: var(--ease);
+  /* display: inline-block; */
+}
+.menuDrawer ul li:hover {
+  color: var(--primaryColor);
+}
