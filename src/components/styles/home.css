@@ -84,6 +84,9 @@
 }
 
 /* responsiveness */
+
+/* Mobile Nav */
+
 .menuController {
   /* background-color: var(--accentColor); */
   background-color: rgba(0, 0, 0, 0.3);
@@ -95,6 +98,35 @@
   z-index: 5;
   padding: 20px;
 }
+.menuIcon i {
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  cursor: pointer;
+}
+.menuIcon i::before {
+  position: absolute;
+  right: 10%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  top: -6px;
+}
+.menuIcon i::after {
+  position: absolute;
+  right: 10%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  top: 6px;
+}
+
 .menuDrawer {
   position: fixed;
   top: 0px;
@@ -102,7 +134,12 @@
   height: 100vh;
   z-index: 6;
   width: 30%;
-  background-color: rgba(33, 150, 83, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: var(--ease);
+  transform: translateX(0%);
+}
+.slider {
+  transform: translateX(100%);
 }
 .menuDrawer #closeMenu {
   position: absolute;

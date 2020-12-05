@@ -2,7 +2,7 @@ import React from "react";
 import { scrollToView } from "../sharedFunctions/scrollToView";
 
 const closeMenu = () => {
-  document.getElementById("g").style.width = "0%";
+  document.getElementById("phoneMenu").classList.toggle("slider");
 };
 
 const MobileNav = () => {
@@ -11,14 +11,16 @@ const MobileNav = () => {
       <div className="menuController">
         <div className="flex-justify-sb menuController container">
           <div className="logo">M</div>
-          <span className="fa fa-x2 fa-list">menu</span>
+          <div onClick={() => closeMenu()} className="menuIcon">
+            <i></i>
+          </div>
         </div>
       </div>
-      <div className="menuDrawer centered">
+      <div id="phoneMenu" className="menuDrawer centered">
         <h1 onClick={() => closeMenu()} id="closeMenu">
           X
         </h1>
-        <ul id="g">
+        <ul>
           <li onClick={() => scrollToView("home")}>Home</li>
           <li onClick={() => scrollToView("about")}>About</li>
           <li onClick={() => scrollToView("portfolio")}>Portfolio</li>
