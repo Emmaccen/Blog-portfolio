@@ -19,3 +19,30 @@
 .aboutBtns button:last-child {
   background-color: var(--primaryColor);
 }
+
+/* responsiveness style sectoin */
+
+@media (max-width: 900px) {
+  .aboutSection {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .aboutSection {
+    width: 70%;
+  }
+  @media (max-width: 750px) {
+    .aboutSection p {
+      font-size: 16px;
+    }
+    .aboutSection {
+      width: 90%;
+    }
+    @media (max-width: 400px) {
+      .aboutBtns button {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+      }
+    }
+  }
+}

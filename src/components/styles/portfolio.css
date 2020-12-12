@@ -60,3 +60,19 @@
   filter: brightness(30%);
   transform: scale(1.1);
 }
+
+/* responsiveness style section */
+
+@media (max-width: 900px) {
+  .portfolioProjectWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 650px) {
+    .portfolioProjectWrapper {
+      grid-template-columns: 1fr;
+    }
+    .portfolioProjectWrapper .portfolio .overlay {
+      padding: 10px 10%;
+    }
+  }
+}

@@ -10,7 +10,9 @@ const MobileNav = () => {
     <nav>
       <div className="menuController">
         <div className="flex-justify-sb container">
-          <div className="logo">M</div>
+          <div onClick={() => window.location.reload()} className="logo">
+            M
+          </div>
           <div onClick={() => closeMenu()} className="menuIcon">
             <i></i>
             <i></i>
@@ -50,7 +52,9 @@ class Nav extends React.Component {
               </ul>
             </div>
             <div>
-              <div className="logo">M</div>
+              <div onClick={() => window.location.reload()} className="logo">
+                M
+              </div>
             </div>
             <div>
               <ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/about.css";
+import { scrollToView } from "../sharedFunctions/scrollToView";
 
 export const About = () => {
   return (
@@ -25,7 +26,9 @@ export const About = () => {
             </p>
             <div className="aboutBtns">
               <button>Download CV</button>
-              <button>Contact Me</button>
+              <button onClick={() => scrollToView("contact")}>
+                Contact Me
+              </button>
             </div>
           </div>
         </div>

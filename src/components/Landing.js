@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import { scrollToView } from "../sharedFunctions/scrollToView";
 import "./styles/home.css";
 
 const Landing = () => {
@@ -12,7 +13,7 @@ const Landing = () => {
           <h1>Micheal Jackson</h1>
           <p>Freelance Web Developer Based In NY City</p>
           <div className="jumbotronBtns">
-            <button>Portfolio</button>
+            <button onClick={() => scrollToView("portfolio")}>Portfolio</button>
             <button>Resume</button>
           </div>
         </div>

@@ -55,10 +55,48 @@
   resize: vertical;
 }
 .contactFormWrapper .contactBg {
-  background-image: url("/images/aboutBg.jpg");
+  background-image: url("/images/6.jpg");
+  width: 100%;
+  height: 80%;
 }
 .contactFormWrapper .contactActionBtn {
   width: 100%;
   margin: 0px;
   margin-top: 10px;
+}
+
+/* Responsiveness style section */
+
+@media (max-width: 950px) {
+  .contactWrapper .quickContact {
+    gap: 20px;
+  }
+  .quickContact {
+    width: 95%;
+  }
+  .contactWrapper .contactCard .flex {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contactWrapper .contactCard .contactIconBg {
+    margin: 0px;
+  }
+  @media (max-width: 950px) {
+    .contactWrapper .quickContact {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+    .quickContact {
+      width: 90%;
+    }
+    @media (max-width: 850px) {
+      .contactFormWrapper .contactBg {
+        display: none;
+      }
+      .contactFormWrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }

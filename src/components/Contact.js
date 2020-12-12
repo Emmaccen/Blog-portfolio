@@ -65,7 +65,9 @@ const ContactFrom = () => {
         </div>
         <button className="contactActionBtn">Send Message</button>
       </div>
-      <div className="backgroundFix contactBg"></div>
+      <div className="centered">
+        <div className="backgroundFix contactBg"></div>
+      </div>
     </div>
   );
 };

@@ -18,3 +18,9 @@
 .footerWrapper .footerIcons i {
   margin-left: 12px;
 }
+
+@media (max-width: 600px) {
+  .footerWrapper > div {
+    flex-direction: column;
+  }
+}

@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  height: 500px;
+  min-height: 500px;
 }
 .blogsWrapper .blog .background {
   width: 100%;
@@ -47,4 +47,24 @@
 }
 .blogsWrapper .blogPosts .blog:hover > .overlay {
   display: flex;
+}
+
+/* responsiveness style section */
+
+@media (max-width: 900px) {
+  .blogsWrapper {
+    width: 70%;
+  }
+  .blogsWrapper .blogPosts {
+    grid-template-columns: 1fr;
+  }
+  .blogsWrapper .blog {
+    height: 300px;
+  }
+
+  @media (max-width: 600px) {
+    .blogsWrapper {
+      width: 90%;
+    }
+  }
 }

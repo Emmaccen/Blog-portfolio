@@ -69,7 +69,7 @@
 }
 
 .homePageWrapper .jumbotron h1 {
-  font-size: 5vw;
+  font-size: 50px;
   margin: 5px 0px;
 }
 
@@ -87,10 +87,6 @@
 
 /* Mobile Nav */
 
-.menuController {
-  /* background-color: var(--accentColor); */
-  background-color: rgba(0, 0, 0, 0.3);
-}
 .menuController .container {
   display: none;
   position: fixed;
@@ -135,8 +131,8 @@
   right: 0px;
   height: 100vh;
   z-index: 6;
-  width: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 70%;
+  background-color: rgba(0, 0, 0, 0.7);
   transition: var(--ease);
   transform: translateX(100%);
 }
@@ -170,11 +166,38 @@
   color: var(--primaryColor);
 }
 
+@media (min-width: 751px) {
+  .menuDrawer {
+    transform: translateX(100%);
+  }
+}
+
 @media (max-width: 750px) {
   .menuController .container {
     display: flex;
   }
   .destopNavWrapper .navContainer {
     display: none;
+  }
+  @media (max-width: 650px) {
+    .homePageWrapper .jumbotron h1 {
+      font-size: 40px;
+    }
+    .homePageWrapper .jumbotron p {
+      font-size: 20px;
+    }
+
+    @media (max-width: 450px) {
+      .jumbotronBtns {
+        display: flex;
+        flex-direction: column;
+      }
+      .homePageWrapper .jumbotron p {
+        font-size: 18px;
+      }
+      .jumbotronBtns button {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
