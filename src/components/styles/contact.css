@@ -82,7 +82,7 @@
   .contactWrapper .contactCard .contactIconBg {
     margin: 0px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 750px) {
     .contactWrapper .quickContact {
       gap: 20px;
       grid-template-columns: 1fr;
