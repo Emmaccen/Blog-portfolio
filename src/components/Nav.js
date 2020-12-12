@@ -9,9 +9,11 @@ const MobileNav = () => {
   return (
     <nav>
       <div className="menuController">
-        <div className="flex-justify-sb menuController container">
+        <div className="flex-justify-sb container">
           <div className="logo">M</div>
           <div onClick={() => closeMenu()} className="menuIcon">
+            <i></i>
+            <i></i>
             <i></i>
           </div>
         </div>
@@ -36,28 +38,30 @@ const MobileNav = () => {
 class Nav extends React.Component {
   render() {
     return (
-      <MobileNav />
-      // <nav className="navWrapper centered">
-      //   <div className="navContainer">
-      //     <div>
-      //       <ul>
-      //         <li onClick={() => scrollToView("home")}>Home</li>
-      //         <li onClick={() => scrollToView("about")}>About</li>
-      //         <li onClick={() => scrollToView("portfolio")}>Portfolio</li>
-      //       </ul>
-      //     </div>
-      //     <div>
-      //       <div className="logo">M</div>
-      //     </div>
-      //     <div>
-      //       <ul>
-      //         <li onClick={() => scrollToView("services")}>Services</li>
-      //         <li onClick={() => scrollToView("blogs")}>Blogs</li>
-      //         <li onClick={() => scrollToView("contact")}>Contact</li>
-      //       </ul>
-      //     </div>
-      //   </div>
-      // </nav>
+      <>
+        <MobileNav />
+        <nav className="destopNavWrapper centered">
+          <div className="navContainer">
+            <div>
+              <ul>
+                <li onClick={() => scrollToView("home")}>Home</li>
+                <li onClick={() => scrollToView("about")}>About</li>
+                <li onClick={() => scrollToView("portfolio")}>Portfolio</li>
+              </ul>
+            </div>
+            <div>
+              <div className="logo">M</div>
+            </div>
+            <div>
+              <ul>
+                <li onClick={() => scrollToView("services")}>Services</li>
+                <li onClick={() => scrollToView("blogs")}>Blogs</li>
+                <li onClick={() => scrollToView("contact")}>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </>
     );
   }
 }

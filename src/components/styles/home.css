@@ -1,23 +1,23 @@
 /* home top section specific styles */
 
-.navWrapper {
+.destopNavWrapper {
   position: absolute;
   top: 0px;
   right: 0px;
   left: 0px;
   width: 100%;
 }
-.navWrapper .navContainer {
+.destopNavWrapper .navContainer {
   padding: 3%;
 }
-.navWrapper .navContainer {
+.destopNavWrapper .navContainer {
   display: flex;
 }
-.navWrapper .navContainer ul {
+.destopNavWrapper .navContainer ul {
   display: flex;
   padding: 10px;
 }
-.navWrapper .navContainer ul li {
+.destopNavWrapper .navContainer ul li {
   margin: 0px 10px;
   font-size: 18px;
   cursor: pointer;
@@ -92,39 +92,41 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 .menuController .container {
+  display: none;
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 5;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .menuIcon i {
   position: absolute;
-  top: 15px;
+  top: 32px;
   right: 10%;
   content: "";
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: white;
   cursor: pointer;
 }
-.menuIcon i::before {
+.menuIcon i:nth-child(2) {
   position: absolute;
-  right: 10%;
+  right: 10.2%;
   content: "";
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: white;
-  top: -6px;
+  top: 38px;
 }
-.menuIcon i::after {
+.menuIcon i:last-child {
   position: absolute;
   right: 10%;
   content: "";
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: white;
-  top: 6px;
+  top: 45px;
 }
 
 .menuDrawer {
@@ -136,18 +138,19 @@
   width: 30%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: var(--ease);
-  transform: translateX(0%);
+  transform: translateX(100%);
 }
 .slider {
-  transform: translateX(100%);
+  transform: translateX(0%);
 }
 .menuDrawer #closeMenu {
   position: absolute;
   top: 10%;
-  right: 20px;
+  right: 30px;
   cursor: pointer;
   transition: var(--ease);
   font-weight: 500;
+  font-size: 30px;
 }
 .menuDrawer #closeMenu:hover {
   color: red;
@@ -165,4 +168,13 @@
 }
 .menuDrawer ul li:hover {
   color: var(--primaryColor);
+}
+
+@media (max-width: 750px) {
+  .menuController .container {
+    display: flex;
+  }
+  .destopNavWrapper .navContainer {
+    display: none;
+  }
 }
